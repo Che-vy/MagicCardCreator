@@ -9,13 +9,15 @@ public class Card : ScriptableObject
     public int manaCost;
     public Common.CardColor cardColor;
     public Texture sprite;
+    public string imgPath;
     public string textBox;
     public Common.CardRarity cardRarity;
 
     public Card() {
         name = "New Card";
         manaCost = 0;
-        cardColor = Common.CardColor.COLORLESS;
+        cardColor = Common.CardColor.RED;
+		imgPath = "";
         textBox = "Effect Goes here";
         cardRarity = Common.CardRarity.COMMON;
     }
